@@ -5,7 +5,8 @@ public class SecCalculator {
 
 
     /* ******************************************************
-    Try to convert input to int, if not possible threw Exception
+    Try to convert input to int,
+    if not possible threw Exception
     ****************************************************** */
     public int stringToInteger(String input) throws InputIsNoIntException {
 
@@ -21,7 +22,8 @@ public class SecCalculator {
     }
 
     /* ******************************************************
-    Calculate Seconds, if a value is a negative Number threw Exception
+    Calculate Seconds,
+    if a value is a negative Number threw Exception
     ****************************************************** */
     public int calcSeconds(int hour, int min, int sec) throws SecondsCalculationIsNegativeException {
 
