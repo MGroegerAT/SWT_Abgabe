@@ -46,9 +46,9 @@ public class SecCalculator {
 
 
     /* ******************************************************
-    Format Result and Print Output
+    Format Result
     ****************************************************** */
-    public void outPut(int sec) {
+    public String outPut(int sec) {
 
         DecimalFormatSymbols separatorSymbol = new DecimalFormatSymbols();
         separatorSymbol.setGroupingSeparator(' ');
@@ -56,8 +56,7 @@ public class SecCalculator {
         DecimalFormat decimalFormat = new DecimalFormat("#,###", separatorSymbol);
         String formattedOutput = decimalFormat.format(sec);
 
-        System.out.println("Sind  " + formattedOutput + " Sekunden");
-
+        return formattedOutput;
     }
 
 

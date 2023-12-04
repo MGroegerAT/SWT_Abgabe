@@ -42,7 +42,10 @@ public class Main {
         ****************************************************** */
         try {
             secSum = secondsCalculator.calcSeconds(hours, minutes, seconds);
-            secondsCalculator.outPut(secSum);
+            System.out.println(
+                            "Sind  " +
+                            secondsCalculator.outPut(secSum) +
+                            " Sekunden");
         } catch (SecondsCalculationIsNegativeException e) {
             System.out.println(e.getMessage());
         } catch (Exception e) {
