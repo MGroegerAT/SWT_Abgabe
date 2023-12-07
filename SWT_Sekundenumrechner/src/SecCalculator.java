@@ -27,17 +27,18 @@ public class SecCalculator {
     ****************************************************** */
     public int calcSeconds(int hour, int min, int sec) throws SecondsCalculationIsNegativeException {
 
+        String errorMessage = "Kein Wert darf negativ sein.";
 
         if (hour < 0) {
-            throw new SecondsCalculationIsNegativeException("Wert (Stunde) darf nicht negativ sein.");
+            throw new SecondsCalculationIsNegativeException(errorMessage);
         }
 
         if (min < 0) {
-            throw new SecondsCalculationIsNegativeException("Wert (Minute) darf nicht negativ sein.");
+            throw new SecondsCalculationIsNegativeException(errorMessage);
         }
 
         if (sec < 0) {
-            throw new SecondsCalculationIsNegativeException("Wert (Sekunde) darf nicht negativ sein.");
+            throw new SecondsCalculationIsNegativeException(errorMessage);
         }
 
         int seconds = hour*3600 + min*60 + sec;
